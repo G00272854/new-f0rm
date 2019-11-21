@@ -4,33 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Form Demo</title>
+  <title>mew-f0rm</title>
   <style>
-    form {
-      background-color: aliceblue;
-    }
-  </style>
+      form {
+        background-color: #f3f3f3;
+      }
+    </style>
 </head>
 <body>
-  <form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
+  <form name="form" method="POST" data-netlify="true">
+<fieldset>
+<legend>Please feel free to send a message</legend>
+<p>
+<label>Email</label>
+</p>
+<p>
+<input type="email" name="email">
+</p>
+<p>
+<label>Message</label>
+</p> 
+<p>
+<textarea name="message" rows="3" cols="22"> 
+</textarea>
+</p>
+
+<fieldset>
+<legend>Would you like a reply?</legend>
+<p>
+<input type="radio" name="yes" value="yes" checked>Yes  
+</p>
+<p>
+<input type="radio" name="no" value="no">No  
+</p>
+</fieldset>
+<p>
+<input type=submit value="Send Message">
+</p>  
+
+</fieldset>
 </form>
 </body>
 </html>
